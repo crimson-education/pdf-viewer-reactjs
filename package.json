@@ -53,8 +53,6 @@
         "rollup-plugin-uglify": "^6.0.4"
     },
     "dependencies": {
-        "bulma": "^0.8.0",
-        "bulma-helpers": "^0.3.8",
         "material-design-icons": "^3.0.1",
         "pdfjs-dist": "^2.2.228",
         "prop-types": "^15.7.2"

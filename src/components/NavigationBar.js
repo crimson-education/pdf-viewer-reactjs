@@ -36,12 +36,15 @@ const Navigation = ({
                 css.navbarWrapper ||
                 'container box has-height-50 is-marginless has-padding-top-10 has-text-white has-background-black'
             }>
-            <div className='columns is-gapless'>
-                <div className='column is-4'>
+            <div className={css.navbarInner || 'columns is-gapless'}>
+                <div className={css.zoomGroup || 'column is-4'}>
                     {hideZoom ? (
                         undefined
                     ) : (
-                        <div className='buttons are-small'>
+                        <div
+                            className={
+                                css.zoomGroupInner || 'buttons are-small'
+                            }>
                             <ZoomOut
                                 scale={scale}
                                 minScale={minScale}
@@ -63,8 +66,8 @@ const Navigation = ({
                         </div>
                     )}
                 </div>
-                <div className='column is-4'>
-                    <div className='buttons are-small'>
+                <div className={css.pageGroup || 'column is-4'}>
+                    <div className={css.pageGroupInner || 'buttons are-small'}>
                         <PreviousPageButton
                             css={css.previousPageBtn}
                             page={page}
@@ -84,11 +87,14 @@ const Navigation = ({
                         />
                     </div>
                 </div>
-                <div className='column is-4'>
+                <div className={css.rotateGroup || 'column is-4'}>
                     {hideRotation ? (
                         undefined
                     ) : (
-                        <div className='buttons are-small'>
+                        <div
+                            className={
+                                css.rotateGroupInner || 'buttons are-small'
+                            }>
                             <RotateLeft
                                 css={css.rotateLeftBtn}
                                 rotationAngle={rotationAngle}
@@ -125,13 +131,20 @@ Navigation.propTypes = {
 
     css: PropTypes.shape({
         navbarWrapper: PropTypes.string,
+        navbarInner: PropTypes.string,
+        pageGroup: PropTypes.string,
+        pageGroupInner: PropTypes.string,
         pages: PropTypes.string,
         pageIndicator: PropTypes.string,
         previousPageBtn: PropTypes.string,
         nextPageBtn: PropTypes.string,
+        zoomGroup: PropTypes.string,
+        zoomGroupInner: PropTypes.string,
         zoomOutBtn: PropTypes.string,
         resetZoomBtn: PropTypes.string,
         zoomInBtn: PropTypes.string,
+        rotateGroup: PropTypes.string,
+        rotateGroupInner: PropTypes.string,
         rotateLeftBtn: PropTypes.string,
         resetRotationBtn: PropTypes.string,
         rotateRightBtn: PropTypes.string,
