@@ -1,6 +1,6 @@
 {
-    "name": "pdf-viewer-reactjs",
-    "version": "2.0.2",
+    "name": "@crimson-education/pdf-viewer-reactjs",
+    "version": "2.1.0",
     "description": "Simple react PDF viewer component with controls based on PDF.js.",
     "source": "src/index.js",
     "main": "dist/pdf-viewer-reactjs.js",
@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/ansu5555/pdf-viewer-reactjs.git"
+        "url": "git@github.com/crimsoneducation/pdf-viewer-reactjs.git"
     },
     "keywords": [
         "pdf",
@@ -25,12 +25,12 @@
         "react",
         "reactjs"
     ],
-    "author": "ansu5555",
+    "author": "ansu5555, Guy Sherman",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/ansu5555/pdf-viewer-reactjs/issues"
+        "url": "https://github.com/crimson-education/pdf-viewer-reactjs/issues"
     },
-    "homepage": "https://github.com/ansu5555/pdf-viewer-reactjs#readme",
+    "homepage": "https://github.com/crimson-education/pdf-viewer-reactjs#readme",
     "peerDependencies": {
         "react": ">=16.8.6",
         "react-dom": ">=16.8.6"
